@@ -6,7 +6,7 @@ AI driven sprout grow box
 - Raspberry Pi 3 B+
 - GrovePi+
 
-### Preparing for installing the Raspbian OS on your Raspberry Pi
+### 1. Preparing for installing the Raspbian OS on your Raspberry Pi
 
 **REQUIREMENTS**:
 
@@ -25,3 +25,17 @@ NOTE: It's highly recommended to use USB drive and not SD card. The SD card brea
 4) Follow the instructions in Balena Ethcher to flask your USB 
 5) Unmount the USB from your local machine, and move onto the next step
 
+### 2. Installing Raspbian OS on your Raspberry Pi
+
+**REQUIREMENTS**:
+
+- USB drive or SD card with Raspbian OS image flashed
+- Raspberry Pi 3 B+
+- Power sources for the Raspberry Pi
+- Keyboard
+- Mouse
+- Screen
+
+1) Stick the USB (or SD card) you have from the previous steps, into your Raspberry Pi
+2) Power-on the Raspberry Pi (you nee
+3) Follow the on-screen 
