@@ -131,3 +131,21 @@ sudo ./firmware_update.sh
 ```
 sudo reboot
 ```
+
+### 5. Install Dependencies
+
+
+1) Open `terminal` on your local machine and:
+
+```
+ssh pi@192.168.1.12
+```
+
+2) Install the dependencies: 
+
+```
+sudo apt-get install vim
+sudo apt-get install tmux
+
+```
+
