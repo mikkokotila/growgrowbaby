@@ -70,5 +70,13 @@ ifconfig
 
 ...and find your IP address under the heading `wlan0`. It will be something like `192.168.1.12`.
 
+4) Go to your local machine, open terminal and: 
 
+```
+ssh pi@192.168.1.12
+```
+
+...and follow the prompts on the screen. This should have you inside a terminal session giving you control over your Raspberry Pi. 
+
+### 4. Setting up GrovePi+ on your Raspberry Pi
 
