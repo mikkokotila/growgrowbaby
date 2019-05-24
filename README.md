@@ -38,4 +38,27 @@ NOTE: It's highly recommended to use USB drive and not SD card. The SD card brea
 
 1) Stick the USB (or SD card) you have from the previous steps, into your Raspberry Pi
 2) Power-on the Raspberry Pi (you nee
-3) Follow the on-screen 
+3) Follow the on-screen instructions to set your location, keyboard, and other settings
+4) Make sure to connect to your local wireless network (we will need that in next steps)
+5) Allow the automated update process to complete (might take a while)
+
+### 3. Configuring your Raspberry Pi for remote access with SSH
+
+We will now free ourselves from the need to have keyboard/mouse/screen attached to the Raspberry Pi, and instead connect to it from any other machine. 
+
+NOTE: The machine you are using to remotely connect to your Raspberry Pi has to be in the same wireless network with your Raspberry Pi. 
+
+1) Open `terminal` from the menu
+2) Then run the following two commands:
+
+```
+sudo systemctl enable ssh
+sudo systemctl start ssh
+```
+
+3) Next, we need to find out what is the IP address Raspberry Pi have taken in your wireless network:
+
+`ifconfig`
+
+
+
