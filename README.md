@@ -96,3 +96,38 @@ ssh pi@192.168.1.12
 ssh pi@192.168.1.12
 ```
 
+2) Get the latest version of GrovePi and install it automatically:
+
+```
+curl -kL dexterindustries.com/update_grovepi | bash
+```
+
+3) Reboot:
+
+```
+sudo reboot
+```
+
+4) Re-establish the connection to the Raspberry Pi:
+
+```
+ssh pi@192.168.1.12
+```
+
+5) Update the GrovePi+ firmware by executing the following commands:
+
+```
+cd Dexter/GrovePi
+sudo git fetch origin
+sudo git reset --hard
+sudo git merge origin/master
+cd Firmware
+sudo chmod +x firmware_update.sh
+sudo ./firmware_update.sh
+```
+
+6) Then reboot once more: 
+
+```
+sudo reboot
+```
