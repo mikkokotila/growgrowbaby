@@ -58,7 +58,11 @@ sudo systemctl start ssh
 
 3) Next, we need to find out what is the IP address Raspberry Pi have taken in your wireless network:
 
-`ifconfig`
+```
+ifconfig
+```
+
+...and find your IP address under the heading `wlan0`. It will be something like `192.168.1.12`.
 
 
 
