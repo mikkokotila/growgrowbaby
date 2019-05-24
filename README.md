@@ -80,3 +80,19 @@ ssh pi@192.168.1.12
 
 ### 4. Setting up GrovePi+ on your Raspberry Pi
 
+**REQUIREMENTS**:
+
+- Raspberry Pi 3 B+ prepared as per the previous steps
+- Power sources for the Raspberry Pi
+- GrovePi+
+- Internet connection
+- Local machine (laptop or any other device with terminal)
+
+**STEPS**:
+
+1) Open `terminal` on your local machine and:
+
+```
+ssh pi@192.168.1.12
+```
+
