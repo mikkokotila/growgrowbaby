@@ -149,3 +149,42 @@ sudo apt-get install tmux
 
 ```
 
+<hr>
+
+[some parts missing]
+
+<br>
+
+### 10. Run grow.py as a Service 
+
+After this step, your Raspberry Pi will run everything as long as its on. You will no longer have to worry about anything except keepking the Raspberry Pi on, and your "grow box" will operate as intended. 
+
+```
+curl https://raw.githubusercontent.com/mikkokotila/growgrowbaby/master/grow.py > /home/pi/dev/grow.py
+sudo curl https://raw.githubusercontent.com/mikkokotila/growgrowbaby/master/grow.py > /lib/systemd/system/grow.service
+
+sudo chmod 644 /lib/systemd/system/grow.service
+chmod +x /home/pi/dev/grow.py
+
+sudo systemctl daemon-reload
+sudo systemctl enable grow.service
+sudo systemctl start grow.service
+
+```
+Next, make sure that the service is running ok:
+
+```
+sudo systemctl status grow.service
+```
+
+If you make any changes to `grow.py`, you have to always restart the service before changes take effect:
+
+```
+sudo systemctl restart grow.service
+```
+
+If you make changes to `grow.service`, then you have to also reload daemon:
+
+```
+sudo systemctl daemon-reload
+```
