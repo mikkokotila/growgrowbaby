@@ -153,7 +153,7 @@ sudo apt-get install tmux
 
 [some parts missing]
 
-<br>
+<hr>
 
 ### 10. Run grow.py as a Service 
 
